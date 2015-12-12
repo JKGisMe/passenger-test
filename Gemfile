@@ -1,5 +1,5 @@
 source 'https://rubygems.org/'
 
-gem 'sinatra'
+gem 'guillotine'
 
-gem "passenger", ">= 5.0.11"
+gem "passenger"

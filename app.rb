@@ -1,7 +1,11 @@
-require 'sinatra/base'
+require 'guillotine'
+module MyApp
+  class App < Guillotine::App
+    adapter = Guillotine::MemoryAdapter.new
+    set :service => Guillotine::Service.new(adapter)
 
-class ExampleApp < Sinatra::Base
-  get '/' do
-    erb :index
+    get '/' do
+      redirect 'https://google.com'
+    end
   end
 end

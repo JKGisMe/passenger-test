@@ -1,10 +1,14 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.3.8)
+    guillotine (1.4.2)
+      addressable (~> 2.3.0)
+      sinatra (~> 1.4.0)
     passenger (5.0.22)
       rack
       rake (>= 0.8.1)
-    rack (1.6.0)
+    rack (1.6.4)
     rack-protection (1.5.3)
       rack
     rake (10.4.2)
@@ -18,8 +22,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  passenger (>= 5.0.11)
-  sinatra
+  guillotine
+  passenger
 
 BUNDLED WITH
    1.10.6

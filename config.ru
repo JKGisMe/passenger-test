@@ -1,3 +1,3 @@
-require File.absolute_path("app.rb")
-
-run ExampleApp
+require "rubygems"
+require File.expand_path("../app.rb", __FILE__)
+run MyApp::App
